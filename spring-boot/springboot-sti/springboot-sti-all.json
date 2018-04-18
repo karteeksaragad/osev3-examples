@@ -43,7 +43,7 @@
                "dockerStrategy": {
                   "from": {
                      "kind": "ImageStreamTag",
-                     "name": "centos:7"
+                     "name": "redhat-openjdk18-openshift:1.2"
                   }
                }
             },
@@ -60,10 +60,10 @@
          "kind": "ImageStream",
          "apiVersion": "v1",
          "metadata": {
-            "name": "centos"
+            "name": "redhat-openjdk18-openshift"
          },
          "spec": {
-            "dockerImageRepository": "library/centos:centos7"
+            "dockerImageRepository": "openshift/redhat-openjdk18-openshift:1.2"
          }
       },
       {

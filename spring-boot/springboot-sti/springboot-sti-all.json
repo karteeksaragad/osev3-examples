@@ -43,7 +43,7 @@
                "dockerStrategy": {
                   "from": {
                      "kind": "ImageStreamTag",
-                     "name": "redhat-openjdk18-openshi"
+                     "name": "wildfly"
                   }
                }
             },
@@ -60,10 +60,10 @@
          "kind": "ImageStream",
          "apiVersion": "v1",
          "metadata": {
-            "name": "redhat-openjdk18-openshi"
+            "name": "wildfly"
          },
          "spec": {
-            "dockerImageRepository": "openshift/redhat-openjdk18-openshi:1.2"
+            "dockerImageRepository": "openshift/wildfly:latest"
          }
       },
       {

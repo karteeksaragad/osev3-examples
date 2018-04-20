@@ -39,11 +39,12 @@
                "contextDir": "spring-boot/springboot-sti"
             },
             "strategy": {
-               "type": "Docker",
-               "dockerStrategy": {
+               "type": "Source",
+               "sourceStrategy": {
                   "from": {
                      "kind": "ImageStreamTag",
-                     "name": "wildfly"
+                     "name": "redhat-openjdk18-openshift:1.2",
+					 "namespace": "openshift"
                   }
                }
             },
@@ -60,10 +61,10 @@
          "kind": "ImageStream",
          "apiVersion": "v1",
          "metadata": {
-            "name": "wildfly"
+            "name": "redhat-openjdk18-openshift"
          },
          "spec": {
-            "dockerImageRepository": "openshift/wildfly:latest"
+            "dockerImageRepository": "openshift/redhat-openjdk18-openshift:1.2"
          }
       },
       {

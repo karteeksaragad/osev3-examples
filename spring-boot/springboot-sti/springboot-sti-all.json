@@ -97,7 +97,7 @@
             "annotations": {
                "description": "Sample Spring Boot helloworld built with maven",
                "iconClass": "icon-jboss",
-               "tags": "instant-app,springboot,maven,java"
+               "tags": "instant-app,springboot,maven,java,gradle"
             }
 
          },

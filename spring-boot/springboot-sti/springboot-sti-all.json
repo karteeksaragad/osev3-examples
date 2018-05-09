@@ -43,7 +43,7 @@
                "sourceStrategy": {
                   "from": {
                      "kind": "ImageStreamTag",
-                     "name": "wildfly:latest"
+                     "name": "wildfly"
                   }
                }
             },

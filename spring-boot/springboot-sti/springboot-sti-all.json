@@ -43,7 +43,7 @@
                "sourceStrategy": {
                   "from": {
                      "kind": "ImageStreamTag",
-                     "name": "wildfly"
+                     "name": "wildfly:latest"
                   }
                }
             },
@@ -208,7 +208,7 @@
                      "sourceStrategy": {
                         "from": {
                            "kind": "ImageStreamTag",
-                           "name": "springboot-sti:latest"
+                           "name": "wildfly:latest"
                         }
                      }
                   },
@@ -446,7 +446,7 @@
                      "sourceStrategy": {
                         "from": {
                            "kind": "ImageStreamTag",
-                           "name": "springboot-sti:latest"
+                           "name": "wildfly:latest"
                         }
                      }
                   },

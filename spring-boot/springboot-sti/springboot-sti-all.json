@@ -82,6 +82,26 @@
 					"referencePolicy": {
 						"type": "Local"
 					}
+				},
+				{
+					"annotations": {
+						"description": "Build and run WildFly 12 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/openshift-s2i/s2i-wildfly/blob/master/README.md.",
+						"iconClass": "icon-wildfly",
+						"openshift.io/display-name": "WildFly 12",
+						"openshift.io/provider-display-name": "Red Hat, Inc.",
+						"sampleRepo": "https://github.com/openshift/openshift-jee-sample.git",
+						"supports": "wildfly:12,jee,java",
+						"tags": "builder,wildfly,java",
+						"version": "12.0"
+					},
+					"from": {
+						"kind": "DockerImage",
+						"name": "docker.io/openshift/wildfly-120-centos7:latest"
+					},
+					"name": "12.0",
+					"referencePolicy": {
+						"type": "Local"
+					}
 				}
 			]
          }
@@ -208,7 +228,7 @@
                      "sourceStrategy": {
                         "from": {
                            "kind": "ImageStreamTag",
-                           "name": "wildfly:latest"
+                           "name": "springboot-sti:latest"
                         }
                      }
                   },
@@ -446,7 +466,7 @@
                      "sourceStrategy": {
                         "from": {
                            "kind": "ImageStreamTag",
-                           "name": "wildfly:latest"
+                           "name": "springboot-sti:latest"
                         }
                      }
                   },

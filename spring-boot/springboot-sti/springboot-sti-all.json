@@ -43,8 +43,7 @@
                "sourceStrategy": {
                   "from": {
                      "kind": "ImageStreamTag",
-                     "name": "redhat-openjdk18-openshift:1.2",
-					 "namespace": "openshift"
+                     "name": "wildfly:latest"
                   }
                }
             },
@@ -58,13 +57,33 @@
          }
       },
       {
-         "kind": "ImageStream",
+         "kind": "ImageStream",	
          "apiVersion": "v1",
          "metadata": {
-            "name": "redhat-openjdk18-openshift"
+            "name": "wildfly"
          },
          "spec": {
-            "dockerImageRepository": "registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift@sha256:afe904fd986c4147d1905813eb1a2f5bc3480ecad5b70b4ccfec384271777429"
+           "tags": [
+				{
+					"annotations": {
+						"description": "Build and run WildFly applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/openshift-s2i/s2i-wildfly/blob/master/README.md.\n\nWARNING: By selecting this tag, your application will automatically update to use the latest version of WildFly available on OpenShift, including major versions updates.",
+						"iconClass": "icon-wildfly",
+						"openshift.io/display-name": "WildFly (Latest)",
+						"openshift.io/provider-display-name": "Red Hat, Inc.",
+						"sampleRepo": "https://github.com/openshift/openshift-jee-sample.git",
+						"supports": "jee,java",
+						"tags": "builder,wildfly,java"
+					},
+					"from": {
+						"kind": "ImageStreamTag",
+						"name": "12.0"
+					},
+					"name": "latest",
+					"referencePolicy": {
+						"type": "Local"
+					}
+				}
+			]
          }
       },
       {

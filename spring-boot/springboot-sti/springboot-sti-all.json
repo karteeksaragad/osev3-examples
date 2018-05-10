@@ -75,7 +75,7 @@
 						"tags": "builder,wildfly,java"
 					},
 					"from": {
-						"kind": "ImageStreamTag",
+						"kind": "DockerImage",
 						"name": "12.0"
 					},
 					"name": "latest",
@@ -95,7 +95,7 @@
 						"version": "12.0"
 					},
 					"from": {
-						"kind": "DockerImage",
+						"kind": "ImageStreamTag",
 						"name": "docker-registry.default.svc:5000/springboot-sti/wildfly:12.0"
 					},
 					"name": "12.0",

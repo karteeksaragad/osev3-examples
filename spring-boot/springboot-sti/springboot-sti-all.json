@@ -96,7 +96,7 @@
 					},
 					"from": {
 						"kind": "DockerImage",
-						"name": "docker.io/openshift/wildfly-120-centos7:latest"
+						"name": "docker.io/openshift/wildfly-120-centos8:latest"
 					},
 					"name": "12.0",
 					"referencePolicy": {

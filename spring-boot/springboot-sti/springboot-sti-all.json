@@ -28,6 +28,9 @@
                {
                   "type": "ImageChange",
                   "imageChange": {}
+               },
+			   {
+                  "type": "ConfigChange",
                }
             ],
             "source": {
@@ -43,7 +46,8 @@
                "sourceStrategy": {
                   "from": {
                      "kind": "DockerImage",
-                     "name": "wildfly:10.1"
+                     "name": "wildfly:10.1",
+					 "namespace": "openshift"
                   }
                }
             },

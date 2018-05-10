@@ -30,7 +30,7 @@
                   "imageChange": {}
                },
 			   {
-                  "type": "ConfigChange",
+                  "type": "ConfigChange"
                }
             ],
             "source": {

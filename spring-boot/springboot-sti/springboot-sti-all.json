@@ -70,7 +70,7 @@
 						"iconClass": "icon-wildfly",
 						"openshift.io/display-name": "WildFly (Latest)",
 						"openshift.io/provider-display-name": "Red Hat, Inc.",
-						"sampleRepo": "https://github.com/openshift/openshift-jee-sample.git",
+						"sampleRepo": "https://github.com/bparees/openshift-jee-sample.git",
 						"supports": "jee,java",
 						"tags": "builder,wildfly,java"
 					},
@@ -89,7 +89,7 @@
 						"iconClass": "icon-wildfly",
 						"openshift.io/display-name": "WildFly 12",
 						"openshift.io/provider-display-name": "Red Hat, Inc.",
-						"sampleRepo": "https://github.com/openshift/openshift-jee-sample.git",
+						"sampleRepo": "https://github.com/bparees/openshift-jee-sample.git",
 						"supports": "wildfly:12,jee,java",
 						"tags": "builder,wildfly,java",
 						"version": "12.0"
